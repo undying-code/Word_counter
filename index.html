@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="game7.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="loading">
+      <img id="loading-image" src="JS_10_7.png" alt="Loading..." />
+    </div>
+    <div class="conatiner">
+      <textarea id="text-area" placeholder="Enter Text Here..."></textarea>
+      <p>Number of words : <span id="count">0</span></p>
+    </div>
+    <script>
+      $(window).on('load', function () {
+        $('#loading').hide(); 
+      });
+    </script>
+    <script src="game7.js"></script>
+  </body>
+</html>
